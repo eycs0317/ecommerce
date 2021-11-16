@@ -1,0 +1,21 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  /* height:300px; */
+  border:2px solid red;
+  align-items: center;
+  background-color: white;
+
+
+}
+/* .product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin: 20px 0 0 15px;
+} */
