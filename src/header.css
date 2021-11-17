@@ -16,6 +16,10 @@
 .header-storeIcon {
   color: rgb(238, 168, 16);
 }
+a {
+  color: rgb(238, 168, 16);
+  text-decoration: none;
+}
 .header-nav {
   display: flex;
   justify-content: space-evenly;
@@ -61,5 +65,15 @@
 }
 .header-navitem-basket1 {
   margin-right: 5px;
+  color: rgb(238, 168, 16);
+}
+
+.header-navitem-basket2 {
+
+  color: rgb(238, 168, 16);
+}
+
+a:hover {
+  border: 1px solid white;
 }
 
