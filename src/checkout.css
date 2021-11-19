@@ -1,4 +1,23 @@
 .checkout {
   display: flex;
+  flex-wrap: wrap;
+  margin:20px;
+  padding:10px;
+
+}
+.checkout-left {
+  max-width: 65%;
+  margin:20px;
+}
+.checkout-left-ads {
+height: 150px;
+  width: 100%;
+}
+.checkout-title {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+}
+.checkout-right {
+
 
 }
