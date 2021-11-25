@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import StoreIcon from '@material-ui/icons/Store';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import SearchIcon from '@material-ui/icons/Search';
 import './header.css'
 import { Link } from 'react-router-dom';
+import StateContext from './StateProvider';
 
 
 function Header() {
+  let { basket, email, login } = useContext(StateContext);
   return (
     <div className='header'>
 
@@ -23,10 +25,14 @@ function Header() {
       </div>
 
       <div className="header-nav">
+        <Link to='/login'>
         <div className="header-navitem">
-          <span className='header-nav-item1'>Hello Guest</span>
-          <span className='header-nav-item2'>Sign In</span>
-        </div>
+          <span className='header-nav-item1'>Hello</span>
+          <span className='header-nav-item2'>{login ? email : 'Sign In'}</span>
+          </div>
+        </Link>
+
+
         <div className="header-navitem">
           <span className='header-nav-item1'>Your</span>
           <span className='header-nav-item2'>Shop</span>
@@ -35,7 +41,7 @@ function Header() {
         <Link to='/checkout'>
           <div className="header-navitem-basket">
             <ShoppingBasketIcon className='header-navitem-basket1'/>
-            <span className='header-navitem-basket2'>5</span>
+            <span className='header-navitem-basket2'>{basket.length}</span>
           </div>
         </Link>
       </div>

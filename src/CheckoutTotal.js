@@ -4,13 +4,16 @@ import CurrencyFormat from 'react-currency-format';
 import StateContext from './StateProvider';
 
 function CheckoutTotal() {
-  let value = useContext(StateContext)
-  console.log('value', value)
+  let { basket } = useContext(StateContext)
+  // console.log('value', value.basket)
+  let total = basket.reduce((amount, item) => {
+    return item.price + amount
+  }, 0)
   return (
 
     <div className='checkout-total'>
-      <p className='checkout-total-title'>Subtotal (2 items):     <CurrencyFormat
-          value={45.99}
+      <p className='checkout-total-title'>{`Subtotal (${basket.length} items):`}     <CurrencyFormat
+          value={total}
           displayType={'text'}
           thousandSeparator={true}
           prefix={'$'} /></p>

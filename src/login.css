@@ -1,0 +1,42 @@
+.login {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+}
+.login-store {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.login-input-email, .login-input-password {
+  width: 98%;
+  margin-bottom: 15px;
+  height: 25px;
+}
+.login-sigin-button {
+  width: 101%;
+  height: 25px;
+  background-color: rgb(238, 168, 16);
+  border:1px solid black;
+}
+.login-disclaimer {
+  font-size: 10px;
+}
+.login-icon{
+  color: rgb(238, 168, 16);
+}
+button {
+  color:rgb(54, 54, 54);
+  height: 25px;
+}

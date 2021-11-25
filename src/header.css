@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  height: 60px;
+  /* height: 60px; */
   background-color: #131921;
   color: antiquewhite;
 }
@@ -23,6 +23,7 @@ a {
 .header-nav {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   margin-right: 15px;
   margin-left: 20px;
@@ -44,6 +45,8 @@ a {
   flex:1;
   align-items: center;
   height:70%;
+  min-width: 30%;
+  margin-right: 10px;
 }
 
 .header-searchInput {
