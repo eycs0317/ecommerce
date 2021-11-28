@@ -25,13 +25,13 @@ function Header() {
       </div>
 
       <div className="header-nav">
+
         <Link to='/login'>
         <div className="header-navitem">
           <span className='header-nav-item1'>Hello</span>
           <span className='header-nav-item2'>{login ? email : 'Sign In'}</span>
           </div>
         </Link>
-
 
         <div className="header-navitem">
           <span className='header-nav-item1'>Your</span>
@@ -44,6 +44,7 @@ function Header() {
             <span className='header-navitem-basket2'>{basket.length}</span>
           </div>
         </Link>
+
       </div>
 
 
