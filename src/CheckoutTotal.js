@@ -9,11 +9,13 @@ function CheckoutTotal() {
   let total = basket.reduce((amount, item) => {
     return item.price + amount
   }, 0)
+
   return (
 
     <div className='checkout-total'>
       <p className='checkout-total-title'>{`Subtotal (${basket.length} items):`}     <CurrencyFormat
           value={total}
+          decimalScale={2}
           displayType={'text'}
           thousandSeparator={true}
           prefix={'$'} /></p>
